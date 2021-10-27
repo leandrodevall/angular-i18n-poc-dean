@@ -1,0 +1,13 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container d-flex justify-content-end">
+    <select
+      [ngStyle]="{ width: '120px' }"
+      class="form-select"
+      #changeSelect
+      (change)="changeLang(changeSelect.value)"
+    >
+      <option value="en" [selected]="lang == 'en'">English</option>
+      <option value="de" [selected]="lang == 'de'">German</option>
+    </select>
+  </div>
+</nav>
